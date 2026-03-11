@@ -21,7 +21,7 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=openai_fm
     ports:
-      - "5432:5432"
+      - "5432"
     volumes:
       - db-data:/var/lib/postgresql/data
       - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
